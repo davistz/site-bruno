@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Teste pro bruno</title>
+
+    <meta name="description" content="LibidGel - Você no controle!." />
+
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Boostrap -->
+    <link
+      href="https://luvitek.com/venda/viri-assets/css/boot.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="https://luvitek.com/venda/viri-assets/css/style.css?v=50"
+    />
+    <!-- ICONES -->
+    <link
+      rel="stylesheet"
+      href="https://luvitek.com/venda/viri-assets/css/line.css"
+    />
+    <!-- Jquery -->
+    <script src="https://luvitek.com/venda/viri-assets/css/min.js"></script>
+
+    <!-- Booststrap JS -->
+    <script src="https://luvitek.com/venda/viri-assets/css/boots.min.js"></script>
+
+    <script src="https://luvitek.com/venda/viri-assets/css/axios.js"></script>
+
+    <script type="text/javascript">
+      (function (b) {
+        var a = {
+          version: "0.0.1",
+          history_api: typeof history.pushState !== "undefined",
+          init: function () {
+            b.location.hash = "#no-back";
+            a.configure();
+          },
+          hasChanged: function () {
+            if (b.location.hash == "#no-back") {
+              b.location.hash = "#";
+              b.location.href = "./depoimentos/?utm_source=backpv";
+            }
+          },
+          checkCompat: function () {
+            if (b.addEventListener) {
+              b.addEventListener("hashchange", a.hasChanged, false);
+            } else {
+              if (b.attachEvent) {
+                b.attachEvent("onhashchange", a.hasChanged);
+              } else {
+                b.onhashchange = a.hasChanged;
+              }
+            }
+          },
+          configure: function () {
+            if (b.location.hash == "#no-back") {
+              if (this.history_api) {
+                history.pushState(null, "", "#");
+              } else {
+                b.location.hash = "#";
+                b.location.href = "./depoimentos/?utm_source=backpv";
+              }
+            }
+            a.checkCompat();
+            a.hasChanged();
+          },
+        };
+        if (typeof define === "function" && define.amd) {
+          define(function () {
+            return a;
+          });
+        } else {
+          if (typeof module === "object" && module.exports) {
+            module.exports = a;
+          } else {
+            b.noback = a;
+          }
+        }
+        a.init();
+      })(window);
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11522138280"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11522138280");
+    </script>
+  </head>
+  <body>
+    <header class="over-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 style="color: white">Libid Gel</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-topo">
+      <div class="container w-1000">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <h1 class="text-white">
+              Ereções Fortes e Duradouras!<br />
+              <span style="color: #d93838">Máximo Prazer Sexual</span>
+            </h1>
+            <img
+              src="viri-assets/img/amor.webp"
+              alt=""
+              width="300px"
+              class="mb-1 letter-amor-sache"
+            />
+            <p class="lead text-white">
+              LibidGel pode te devolver sua confiança e auto estima na cama. Sua
+              parceira não vai se esquecer de você!
+            </p>
+            <a href="index.html#planos" class="btn cta d-none d-md-inline-block"
+              >QUERO COMPRAR AGORA</a
+            >
+          </div>
+          <div class="col-md-6 relative text-center">
+            <div id="container-luz-personagem"></div>
+            <img
+              src="viri-assets/img/logo-libid.png"
+              alt=""
+              width="450"
+              class="personagem-topo"
+            />
+            <a href="index.html#planos" class="btn cta d-block d-md-none"
+              >QUERO COMPRAR AGORA</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1626608064">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section class="section pb-0" style="margin-bottom: 90px">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-md-12 text-center">
+            <h2 class="color-marron">
+              Ainda em dúvida sobre como o LIBIDGEL pode te ajudar?
+            </h2>
+            <p><strong>Clique abaixo e assista ao vídeo:</strong></p>
+          </div>
+          <div style="margin: 0 auto; max-width: 650px">
+            <div style="padding: 56.25% 0 0 0; position: relative">
+              <iframe
+                src="https://player.vimeo.com/video/436133309?h=681a8c1b9a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                title="KAREN PORFIRO LEVIMUNE LARANJA"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+
+    <section class="section bg-white-2 section-sobrepor">
+      <div class="container w-1000">
+        <div class="row">
+          <div class="col-md-12 text-center mb-3">
+            <h2 class="color-marron">
+              Esses são os resultados que você pode esperar usando o LibidGel!
+            </h2>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/efeitos-1.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Maior Disposição!</h4>
+                <p class="mb-0">
+                  Além de ter mais apetite sexual e prazer, o LibidGel deixa
+                  você cheio de energia para aproveitar a noite toda sem parar.
+                  Permitindo que você aproveite o máximo da sua verdadeira
+                  potência.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/efeitos-2.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Máximo Prazer</h4>
+                <p class="mb-0">
+                  Experimente orgasmos muito mais intensos e volumosos, eleve
+                  seu prazer à um nível que você sequer sabia que era possível
+                  chegar. Você e sua parceira vão se surpreender!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/efeitos-3.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Tesão a mil</h4>
+                <p class="mb-0">
+                  Com apenas 2 cápsulas de LibidGel por dia, logo na primeira
+                  semana você vai perceber uma evolução incrível no seu desejo
+                  sexual, na sua potência e na duração das suas ereções.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/efeitos-4.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Aumento de Pênis</h4>
+                <p class="mb-0">
+                  A fórmula avançada do LibidGel, potêncializa o desenvolvimento
+                  do pênis. Promovendo um aumento e engrossamento de forma 100%
+                  natural, sem contraindicações.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+
+    <section id="conheca" class="section bg-white section-sobrepor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center order-2 order-md-1">
+            <img
+              src="viri-assets/img/grafico.webp"
+              alt=""
+              class="img-fluid caixa-mockup"
+              width="400"
+            />
+          </div>
+          <div
+            class="col-md-6 col-lg-5 my-auto text-center text-md-start order-1 order-md-2"
+          >
+            <h2 class="color-marron">Tamanho é documento?</h2>
+            <p class="mb-4">
+              Essa ideia de que tamanho não é documento vem de uma velha ideia
+              machista de que mulher não gosta de ter prazer. Porém, de acordo
+              com pesquisas recentes, as mulheres realmente preferem um pênis
+              acima da média.<br />
+              Saber usar o pênis é importante mas se isso vier aliado ao tamanho
+              e potência, é ainda melhor! Quanto mais tempo você conseguir
+              manter o pênis ereto, maiores as chances de a mulher alcançar
+              orgasmos e sempre pedir mais.<br />
+              Com 87% da preferência feminina, ter um pênis grande é fundamental
+              para a relação sexual, elas sempre vão preferir um pênis maior e
+              mais grosso!
+            </p>
+            <a href="index.html#planos" class="btn cta d-none d-md-inline-block"
+              >QUERO FAZER MEU PEDIDO</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+    <section class="section-sobrepor section-dois-sabores d-block d-md-none">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center" style="margin-top: -60px">
+            <img
+              src="viri-assets/img/meio.webp"
+              class="img-fluid d-block mx-auto"
+              width="300px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sobrepor pb-0 pb-md-5 section-dois-sabores invert">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-4 text-center text-md-end pt-5 pb-5 pb-md-0"
+          >
+            <h2 style="color: white">LibidGel foi testado e Aprovado</h2>
+            <p style="color: white">São milhares de clientes satisfeitos!</p>
+          </div>
+          <div
+            class="col-12 col-md-4 text-center d-none d-md-block"
+            style="margin-top: -60px"
+          >
+            <img
+              src="viri-assets/img/meio.webp"
+              class="img-fluid d-block mx-auto"
+              width="390px"
+            />
+            <a href="index.html#planos" class="btn cta d-inline-block"
+              >QUERO FAZER MEU PEDIDO</a
+            >
+          </div>
+          <div
+            class="col-12 col-md-4 text-center text-md-start pt-5 pb-5 pb-md-0"
+          >
+            <h2 style="color: white">Fórmula Exclusiva</h2>
+            <p style="color: white">
+              Nossa fórmula é natural e sem efeitos colaterais!
+            </p>
+            <div class="col-md-6 text-center my-auto">
+              <a
+                href="index.html#planos"
+                class="btn cta d-inline-block d-md-none mt-4"
+                >QUERO FAZER MEU PEDIDO</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-white-2 section-sobrepor">
+      <div class="container w-1000">
+        <div class="row">
+          <div class="col-md-12 text-center mb-3">
+            <h2 class="color-marron">
+              Só 2 cápsulas por dia, podem te dar esses benefícios:
+            </h2>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img src="viri-assets/img/ere.webp" alt="" class="img-fluid" />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Fluxo Sanguíneo</h4>
+                <p class="mb-0">
+                  LibidGel atua no aumento do fluxo sanguíneo bombeando mais
+                  sangue para a região genital, favorecendo um melhor desempenho
+                  sexual através de ereções mais intensas e longas. Esse fluxo
+                  nos corpos carvenosos do pênis, causam a expansão dos tecidos
+                  internos e externos do pênis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/testo.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Equilíbrio</h4>
+                <p class="mb-0">
+                  A combinação de ingredientes especiais do LibidGel,
+                  influenciam na formação de hormônios no corpo do homem. Em
+                  especial a testosterona, melhorando vários aspectos da
+                  sexualidade masculina, como a falta de desejo sexual e
+                  problemas de impotência, devolvendo sua confiança.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/estimula.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Estimulante Natural</h4>
+                <p class="mb-0">
+                  Com uso do LibidGel você terá ereções impressionantes.
+                  Aumentando os estimulos cerebrais e insificando o apetite
+                  sexual, vai notar também um semem com muito mais volume. Chega
+                  do famoso 'meia bomba', sempre que sua parceira estiver afim,
+                  você vai estar disponível para satisfazer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 px-2 mb-3 text-center my-auto">
+            <div class="thumb-video-depo">
+              <div class="imagem-thumb services__button">
+                <img
+                  src="viri-assets/img/vigor.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="div-content-text">
+                <h4 class="mb-0">Máximo Vigor Sexual</h4>
+                <p class="mb-0">
+                  A fórmula de LibidGel proporciona energia e disposição extra
+                  pra sua relação sexual. Controla as emoções como a redução dos
+                  níveis de stress e ansiedade, que podem influenciar no
+                  domínimo e na qualidade da ereção. Experimente e comprove
+                  todos esses benefícios usando 2 cápsulas ao dia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+
+    <section class="section-small section-sobrepor bg-color1">
+      <div class="container w-1000">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-end my-auto">
+            <h2 style="color: white">Produto registrado na ANVISA</h2>
+            <p class="mb-4" style="color: white">
+              Segurança de estar comprando um produto de qualidade e sem efeitos
+              colaterais.
+            </p>
+            <a href="index.html#planos" class="btn cta d-none d-md-inline-block"
+              >QUERO FAZER MEU PEDIDO</a
+            >
+          </div>
+          <div class="col-md-6 text-center my-auto">
+            <img
+              src="./viri-assets/img/logo-libid.png"
+              alt=""
+              class="img-fluid d-block mx-auto"
+              width="320"
+            />
+            <a
+              href="index.html#planos"
+              class="btn cta d-inline-block d-md-none mt-4"
+              >QUERO FAZER MEU PEDIDO</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-depoimentos-image">
+      <div class="container w-1000">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="color-marron">
+              Quem usa,<br class="d-block d-md-none" />
+              aprova e recomenda!
+            </h2>
+            <p class="lead mb-4">Veja o que estão falando sobre o LibidGel:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo1.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo2.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo3.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo4.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo5.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo6.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo7.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo8.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+          <div class="col-6 col-md-4 px-2">
+            <img
+              src="viri-assets/img/depoimentos/depo9.webp"
+              alt=""
+              class="img-fluid mb-3"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+
+    <section class="section bg-white-2 pb-0">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="col-md-12 text-center">
+            <h2 class="color-marron">
+              Veja como o LibidGel vai chegar na sua casa!
+            </h2>
+            <p><strong>Clique abaixo e assista ao vídeo:</strong></p>
+          </div>
+          <div style="margin: 0 auto; max-width: 650px">
+            <div style="padding: 56.25% 0 0 0; position: relative">
+              <iframe
+                src="https://player.vimeo.com/video/880963839?h=681a8c1b9a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                title="KAREN PORFIRO LEVIMUNE LARANJA"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <br /><br /><br />
+    </section>
+
+    <section class="section bg-color2 section-garantia">
+      <div class="container">
+        <div class="row">
+          <!-- Coluna com o texto e a imagem ajustada -->
+          <div class="col-md-12 text-center order-1">
+            <h2 style="color: white; text-align: center">
+              Satisfação garantida <br class="d-none d-md-block" />
+              ou seu dinheiro de volta!
+            </h2>
+
+            <!-- Imagem visível apenas no mobile -->
+            <img
+              src="viri-assets/img/garantia.webp"
+              alt=""
+              class="modelo-garantia img-fluid my-3 d-md-none"
+            />
+
+            <p style="color: white; font-size: large; text-align: center">
+              Acreditamos tanto na eficácia do nosso produto que, se você não
+              estiver
+              <strong>100% satisfeito</strong> com a experiência, nós devolvemos
+              o seu dinheiro. Prazo máximo para o pedido de devolução é de 30
+              dias após a compra.<span class="small">*</span>
+            </p>
+          </div>
+
+          <!-- Coluna com a imagem, visível apenas no desktop -->
+          <div
+            class="col-md-6 relative coluna-modelo-garantia order-2 d-none d-md-block"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="planos"
+      class="section-small bg-white relative text-center section-top-large pb-5"
+    >
+      <div class="container w-1300">
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <h2 class="color-marron mb-0" id="frase-normal">
+              Nossos Kits Disponíveis: <br class="d-block d-md-none" />
+            </h2>
+          </div>
+
+          <p class="lead">Descontos aplicados por quantidade!</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3 pb-3 px-2 preco order-1 order-md-1">
+            <div class="box">
+              <div class="col-md-12 header-preco">
+                <p class="title-header py-0">LEVE 10 POTES</p>
+              </div>
+              <div class="content-box">
+                <div class="col-6 col-md-12 px-0 px-md-3">
+                  <img
+                    src="viri-assets/img/logo-libid.png"
+                    class="img-fluid mb-2"
+                  />
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="150"
+                    class="img-fluid mb-3 mt-0 d-inline-block d-md-none"
+                  />
+                  <p class="small d-none d-md-inline-block text-combo">
+                    <strong>Contém:</strong><br />
+                    600 Cápsulas
+                  </p>
+                </div>
+                <div
+                  class="col-6 col-md-12 text-start text-md-center ps-2 ps-md-0 my-auto pt-2"
+                >
+                  <p class="desconto mb-0">R$ 10,79 por POTE</p>
+                  <p class="preco-antigo">DE: R$ 10,90</p>
+                  <p class="preco-novo">
+                    POR:
+                    <span class="destaque-valor-novo">R$ 10,90</span
+                    ><span class="d-inline-block d-md-none ms-1"> ou</span>
+                  </p>
+                  <p class="divisor-preco-prazo">
+                    <span class="divisor"></span> ou
+                    <span class="divisor"></span>
+                  </p>
+                  <p class="qt-parcelas">em até 12x de</p>
+                  <p class="valor-parcela">
+                    <span class="sifrao">R$</span> 10,80
+                  </p>
+                </div>
+                <div class="col-12 col-md-12">
+                  <a
+                    href=""
+                    class="btn cta-comprar mb-3 mb-md-0"
+                    target="_blank"
+                    >ADICIONAR AO CARRINHO</a
+                  >
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="160"
+                    class="img-fluid mb-4 mt-3 d-none d-md-inline-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pb-3 px-2 preco order-2 order-md-2">
+            <div class="box">
+              <div class="col-md-12 header-preco">
+                <p class="title-header py-0">LEVE 5 POTES</p>
+              </div>
+              <div class="content-box">
+                <div class="col-6 col-md-12 px-0 px-md-3">
+                  <img
+                    src="viri-assets/img/logo-libid.png"
+                    class="img-fluid mb-2"
+                  />
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="150"
+                    class="img-fluid mb-3 mt-0 d-inline-block d-md-none"
+                  />
+                  <p class="small d-none d-md-inline-block text-combo">
+                    <strong>Contém:</strong><br />
+                    300 Cápsulas
+                  </p>
+                </div>
+                <div
+                  class="col-6 col-md-12 text-start text-md-center ps-2 ps-md-0 my-auto pt-2"
+                >
+                  <p class="desconto mb-0">R$ 10,58 por POTE</p>
+                  <p class="preco-antigo">DE: R$ 10,50</p>
+                  <p class="preco-novo">
+                    POR:
+                    <span class="destaque-valor-novo">R$ 10,90</span
+                    ><span class="d-inline-block d-md-none ms-1"> ou</span>
+                  </p>
+                  <p class="divisor-preco-prazo">
+                    <span class="divisor"></span> ou
+                    <span class="divisor"></span>
+                  </p>
+                  <p class="qt-parcelas">em até 12x de</p>
+                  <p class="valor-parcela">
+                    <span class="sifrao">R$</span> 10,00
+                  </p>
+                </div>
+                <div class="col-12 col-md-12">
+                  <a
+                    href=""
+                    class="btn cta-comprar mb-3 mb-md-0"
+                    target="_blank"
+                    >ADICIONAR AO CARRINHO</a
+                  >
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="160"
+                    class="img-fluid mb-4 mt-3 d-none d-md-inline-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 pb-3 px-2 preco order-3 order-md-3">
+            <div class="box">
+              <div class="col-md-12 header-preco">
+                <p class="title-header py-0">LEVE 3 POTES</p>
+              </div>
+              <div class="content-box">
+                <div class="col-6 col-md-12 px-0 px-md-3">
+                  <img
+                    src="viri-assets/img/logo-libid.png"
+                    class="img-fluid mb-2"
+                  />
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="150"
+                    class="img-fluid mb-3 mt-0 d-inline-block d-md-none"
+                  />
+                  <p class="small d-none d-md-inline-block text-combo">
+                    <strong>Contém:</strong><br />
+                    180 Cápsulas
+                  </p>
+                </div>
+                <div
+                  class="col-6 col-md-12 text-start text-md-center ps-2 ps-md-0 my-auto pt-2"
+                >
+                  <p class="desconto mb-0">R$ 10,63 por POTE</p>
+                  <p class="preco-antigo">DE: R$ 10,70</p>
+                  <p class="preco-novo">
+                    POR:
+                    <span class="destaque-valor-novo">R$ 10,90</span
+                    ><span class="d-inline-block d-md-none ms-1"> ou</span>
+                  </p>
+                  <p class="divisor-preco-prazo">
+                    <span class="divisor"></span> ou
+                    <span class="divisor"></span>
+                  </p>
+                  <p class="qt-parcelas">em até 12x de</p>
+                  <p class="valor-parcela">
+                    <span class="sifrao">R$</span> 10,93
+                  </p>
+                </div>
+                <div class="col-12 col-md-12">
+                  <a
+                    href=""
+                    class="btn cta-comprar mb-3 mb-md-0"
+                    target="_blank"
+                    >ADICIONAR AO CARRINHO</a
+                  >
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="160"
+                    class="img-fluid mb-4 mt-3 d-none d-md-inline-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 pb-3 px-2 preco order-4 order-md-4">
+            <div class="box">
+              <div class="col-md-12 header-preco">
+                <p class="title-header py-0">EXPERIMENTE</p>
+              </div>
+              <div class="content-box">
+                <div class="col-6 col-md-12 px-0 px-md-3">
+                  <img
+                    src="viri-assets/img/logo-libid.png"
+                    class="img-fluid mb-2"
+                  />
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="150"
+                    class="img-fluid mb-3 mt-0 d-inline-block d-md-none"
+                  />
+
+                  <p class="small d-none d-md-inline-block text-combo">
+                    <strong>Contém:</strong><br />
+                    60 Cápsulas
+                  </p>
+                </div>
+                <div
+                  class="col-6 col-md-12 text-start text-md-center ps-2 ps-md-0 my-auto pt-2"
+                >
+                  <p class="desconto mb-0">EXPERIMENTE</p>
+                  <p class="preco-antigo">R$ 10,90</p>
+                  <p class="preco-novo">
+                    <span class="destaque-valor-novo">R$ 10,90</span
+                    ><span class="d-inline-block d-md-none ms-1"> ou</span>
+                  </p>
+                  <p class="divisor-preco-prazo">
+                    <span class="divisor"></span> ou
+                    <span class="divisor"></span>
+                  </p>
+                  <p class="qt-parcelas">em até 12x de</p>
+                  <p class="valor-parcela">
+                    <span class="sifrao">R$</span> 10,36
+                  </p>
+                </div>
+                <div class="col-12 col-md-12">
+                  <a
+                    href=""
+                    class="btn cta-comprar mb-3 mb-md-0"
+                    target="_blank"
+                    >ADICIONAR AO CARRINHO</a
+                  >
+                  <img
+                    src="viri-assets/img/frete-todo-brasil.webp"
+                    width="160"
+                    class="img-fluid mb-4 mt-3 d-none d-md-inline-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color1">
+      <div class="container w-1000">
+        <div class="row mb-4">
+          <div class="col-md-12 text-center">
+            <h2 class="mb-0" style="color: white">
+              Sua compra 100%<br class="d-block d-md-none" />
+              segura e protegida!
+            </h2>
+            <br />
+            <p class="lead" style="font-size: large; color: white">
+              Não se preocupe, usamos as melhores tecnologias para que sua
+              compra seja segura.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 px-4 text-center">
+            <img
+              src="viri-assets/img/icons/dados.webp"
+              alt=""
+              class="img-fluid mb-3"
+              width="70"
+            />
+            <p style="font-size: large; color: white">
+              Os seus dados são pessoais, sigilosos e não são compartilhados.
+            </p>
+          </div>
+          <div class="col-6 col-md-3 px-4 text-center">
+            <img
+              src="viri-assets/img/icons/sigilo.webp"
+              alt=""
+              class="img-fluid mb-3"
+              width="70"
+            />
+            <p style="font-size: large; color: white">
+              Seus dados financeiros não ficam salvos e não são compartilhados.
+            </p>
+          </div>
+          <div class="col-6 col-md-3 px-4 text-center">
+            <img
+              src="viri-assets/img/icons/confiavel.webp"
+              alt=""
+              class="img-fluid mb-3"
+              width="70"
+            />
+            <p style="font-size: large; color: white">
+              Site confiável e autenticado por empresas de segurança.
+            </p>
+          </div>
+          <div class="col-6 col-md-3 px-4 text-center">
+            <img
+              src="viri-assets/img/icons/prazo.webp"
+              alt=""
+              class="img-fluid mb-3"
+              width="70"
+            />
+            <p style="font-size: large; color: white">
+              Entrega garantida no prazo combinado e política de devolução.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container w-1000">
+        <div class="row mb-4">
+          <div class="col-md-12 text-center">
+            <h2 class="color-marron mb-0">Perguntas Frequentes</h2>
+          </div>
+        </div>
+        <div class="row" id="perguntas-frequentes">
+          <div class="col-md-6">
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq0"
+                data-toggle="collapse"
+                data-target="#resposta0"
+                aria-expanded="false"
+                aria-controls="resposta0"
+              >
+                <h6 class="mb-0">Aparece na fatura? a embalagem é discreta?</h6>
+              </div>
+              <div
+                id="resposta0"
+                class="collapse"
+                aria-labelledby="faq0"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Perfeito, muitos clientes tem essa mesma dúvida! Na fatura
+                    do cartão não vai o nome do produto ou qualquer informação
+                    sobre ele. Nossos envios são totalmente discretos, ninguém
+                    vai saber o que tem na caixa que vamos te enviar, apenas
+                    você quando chegar na sua casa e abrir a mesma. Pode ficar
+                    tranquilo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq1"
+                data-toggle="collapse"
+                data-target="#resposta1"
+                aria-expanded="false"
+                aria-controls="resposta1"
+              >
+                <h6 class="mb-0">LibidGel realmente funciona?</h6>
+              </div>
+              <div
+                id="resposta1"
+                class="collapse"
+                aria-labelledby="faq1"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    O LibidGel já é vendido há alguns anos no Brasil, e durante
+                    esse tempo acumula muitos depoimentos de homens que
+                    realmente tiveram resultados surpreendentes com o nosso
+                    produto.<br />
+
+                    Então sim, o LibidGel funciona e funciona muito para quem
+                    usa o nosso produto.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq2"
+                data-toggle="collapse"
+                data-target="#resposta2"
+                aria-expanded="false"
+                aria-controls="resposta2"
+              >
+                <h6 class="mb-0">Tenho medo de ser golpe, o que fazer?</h6>
+              </div>
+              <div
+                id="resposta2"
+                class="collapse"
+                aria-labelledby="faq2"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    É normal suspeitar de vendas online, afinal todos os dias
+                    aparece na televisão novos golpes que estão fazendo. Mas
+                    vamos parar pra pensar, todos os dias tambéma aprecem
+                    pessoas que querem prejudicar outras pessoas, nem por isso
+                    quer dizer que todo mundo quer prejudicar.<br />
+
+                    A verdade é que quem respeita o cliente e trabalha de forma
+                    séria, como nós, acaba pagando pelas pessoas que aplicam
+                    golpes na internet.<br />
+
+                    Pode ficar tranquilo que nossa empresa é séria e o LibidGel
+                    vai chegar na sua casa como combinado e na quantidade que
+                    você escolher. Temos todo um acompanhamento via e-mail e
+                    whatsapp, se surgir alguma dúvida sobre a entrega, rastreio
+                    ou qualquer coisa, basta nos chamar e vamos te auxiliar até
+                    a chegada do produto na sua casa.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq3"
+                data-toggle="collapse"
+                data-target="#resposta3"
+                aria-expanded="false"
+                aria-controls="resposta3"
+              >
+                <h6 class="mb-0">LibidGel é igual o "Azulzinho ou tadala"?</h6>
+              </div>
+              <div
+                id="resposta3"
+                class="collapse"
+                aria-labelledby="faq3"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Não! O LibidGel não é o azulzinho, Sabemos que o azulzinho
+                    tem várias contraindicações, acelera o coração e já causou
+                    casos graves de problemas para quem utiliza esses produtos.
+                    <br />
+
+                    O LibidGel é uma alternativa para quem quer melhorar o
+                    desempenho sexual sem colocar sua saúde em risco, por isso
+                    nosso produto é 100% natural e sua fórmula tem registro na
+                    Anvisa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq4"
+                data-toggle="collapse"
+                data-target="#resposta4"
+                aria-expanded="false"
+                aria-controls="resposta4"
+              >
+                <h6 class="mb-0">Qual prazo de entrega?</h6>
+              </div>
+              <div
+                id="resposta4"
+                class="collapse"
+                aria-labelledby="faq4"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Nosso prazo de entrega é de 3 a 12 dias úteis. Esse tempo
+                    pode variar de acordo com a cidade que você mora, regiões
+                    como a região sudeste, leva de 3 a 7 dias para que o produto
+                    já esteja na sua casa. Em regiões mais afastadas, o prazo
+                    pode ser de até 12 dias úteis para a entrega. Lembrando que
+                    quem faz nossas entregas é o correio e pode acontecer de ser
+                    despachado via transportadora como a Jadlog.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq5"
+                data-toggle="collapse"
+                data-target="#resposta5"
+                aria-expanded="false"
+                aria-controls="resposta5"
+              >
+                <h6 class="mb-0">
+                  Hipertensos ou diabéticos podem usar o LibidGel?
+                </h6>
+              </div>
+              <div
+                id="resposta5"
+                class="collapse"
+                aria-labelledby="faq5"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Sim, pode usar. Não existe contraindicação para hipertenso
+                    ou diabéticos, nosso produto é seguro para o uso.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq6"
+                data-toggle="collapse"
+                data-target="#resposta6"
+                aria-expanded="false"
+                aria-controls="resposta6"
+              >
+                <h6 class="mb-0">Como devo tomar o LibidGel?</h6>
+              </div>
+              <div
+                id="resposta6"
+                class="collapse"
+                aria-labelledby="faq6"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Nossa recomendação de uso é de 2 cápsulas ao dia, sendo 1 na
+                    parte da manhã e outra na parte da tarde. Pode ser depois do
+                    café ou antes do almoço e antes da janta ou depois da janta.
+                    Não recomendamos tomar mais do que 2 cápsulas por dia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header"
+                id="faq7"
+                data-toggle="collapse"
+                data-target="#resposta7"
+                aria-expanded="false"
+                aria-controls="resposta7"
+              >
+                <h6 class="mb-0">Por quanto tempo devo tomar o LibidGel?</h6>
+              </div>
+              <div
+                id="resposta7"
+                class="collapse"
+                aria-labelledby="faq7"
+                data-parent="#perguntas-frequentes"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Recomendamos o uso de 3 a 5 meses no mínimo. Dependendo do
+                    seu objetivo, seu corpo precisa se adaptar ao produto para
+                    que os resultados comecem a aparecer. Como o resultado vai
+                    variar de pessoa pra pessoa, Quanto maior for o tempo de
+                    uso, maiores são as chances de obter resultados ainda
+                    melhores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center my-auto">
+        <a
+          href="index.html#planos"
+          class="btn cta d-inline-block d-md-none mt-4"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+      <div
+        class="col-12 text-center d-none d-md-block"
+        style="margin-top: 30px"
+      >
+        <a href="index.html#planos" class="btn cta d-inline-block"
+          >QUERO FAZER MEU PEDIDO</a
+        >
+      </div>
+    </section>
+    <footer class="section-small pb-5 mt-5">
+      <div class="custom-shape-divider-bottom-1626726514">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mb-4">
+            <img
+              src="./viri-assets/img/logo-libid.png"
+              alt=""
+              width="150"
+              class="img-fluid"
+            /><br />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mb-4">
+            <h5>Links Úteis</h5>
+            <ul>
+              <li>
+                <a href="./termos-de-uso.html" target="_blank">Termos de Uso</a>
+              </li>
+              <li>
+                <a href="./politicas-de-privacidade.html" target="_blank"
+                  >Política de Privacidade</a
+                >
+              </li>
+
+              <li>
+                <a href="" target="_blank">Aviso Legal</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mb-4">
+            <h5>Atendimento</h5>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="__cf_email__"
+                  data-cfemail="74171b1a0015001b34021d061d071d0e115a171b19"
+                  >contato@libidgel.com</a
+                >
+              </li>
+              <li>
+                <a href="" target="_blank"> Falar no whatsapp </a>
+              </li>
+              <li>Segunda à sexta: 09h as 19h</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center text-md-start mb-4">
+            <h5>Envio</h5>
+            <p>
+              Prazo de entrega de 7 dias úteis para os estados RJ, SP, ES e MG.
+              Para os demais estados, o prazo pode ser de até 20 dias úteis.
+            </p>
+            <h5 class="mt-4">Formas de pagamento</h5>
+            <img
+              src="https://luvitek.com/venda/viri-assets/img/bandeiras.webp"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <hr class="mb-5" />
+        <div class="row">
+          <div class="col-md-12 w-1000 mx-auto text-center">
+            <p class="small">
+              Copyright © LibidGel. Todos os direitos reservados. Todo o
+              conteúdo do site, todas as fotos, imagens, logotipos, marcas,
+              layout, aqui veiculados são de propriedade exclusiva da Daluvi
+              comércio de produtos LTDA - CNPJ: 34.110.193/0001-55. É vedada
+              qualquer reprodução, total ou parcial, de qualquer elemento de
+              identidade, sem expressa autorização. A violação de qualquer
+              direito mencionado implicará na responsabilização cível e criminal
+              nos termos da Lei.
+              <br /><br />
+              Informamos que LibidGel é um tratamento. Seu resultado pode variar
+              de pessoa para pessoa. Os preços dos produtos estão sujeitos a
+              alteração sem aviso prévio.
+              <br /><br />
+              Este site não é afiliado ao Facebook ou a qualquer entidade do
+              Facebook. Depois que você sair do Facebook, a responsabilidade não
+              é deles e sim do nosso site. Fazemos todos os esforços para
+              indicar claramente e mostrar todas as provas do produto e usamos
+              resultados reais. Nós não vendemos o seu e-mail ou qualquer
+              informação para terceiros. Jamais fazemos nenhum tipo de spam. Se
+              você tiver alguma dúvida, sinta-se à vontade para usar o link de
+              contato e falar conosco em horário comercial de segunda à
+              sexta-feira das 09h00 as 19h00. Lemos e respondemos todas as
+              mensagens por ordem de chegada.
+              <br /><br />
+              *Para participar do desafio 30 dias confira o regulamento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      data-cfasync="false"
+      src="https://luvitek.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+  </body>
+
+  <!-- Main JS -->
+  <script src="https://luvitek.com/venda/viri-assets/js/main.js?v=3"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <!-- Produtos JS -->
+  <script src="https://luvitek.com/venda/viri-assets/css/evolua.js"></script>
+
+  <!-- Produtos JS -->
+  <script src="https://luvitek.com/venda/viri-assets/css/protect3.js"></script>
+</html>

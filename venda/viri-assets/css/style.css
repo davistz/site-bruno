@@ -1,0 +1,854 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800;900&display=swap");
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  color: #383838;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p.small {
+  font-size: 0.8em;
+}
+
+.relative {
+  position: relative;
+}
+
+.cta {
+  padding: 15px 40px;
+  background-color: #06ca29;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #0f9527;
+  color: #fff;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.section-small {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-sobrepor {
+  position: relative;
+  z-index: 9;
+}
+
+.w-700 {
+  max-width: 700px;
+}
+
+.w-1000 {
+  max-width: 1000px;
+}
+
+.bg-color1 {
+  background-color: #001745;
+}
+
+.bg-color2 {
+  background-color: #001745;
+}
+
+.bg-color3 {
+  background-color: #001745;
+}
+
+header.over-header {
+  padding: 40px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 9;
+}
+
+.color-marron {
+  color: #000;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.section-topo {
+  position: relative;
+  background: #001745;
+  background: -moz-linear-gradient(180deg, #001745 0%, #01326a 100%);
+  background: -webkit-linear-gradient(180deg, #001745 0%, #01326a 100%);
+  background: linear-gradient(180deg, #01326a 0%, #01326a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001745", endColorstr="#001745", GradientType=1);
+  padding-top: 240px;
+  padding-bottom: 130px;
+}
+
+.section-topo .container {
+  position: relative;
+  z-index: 9;
+}
+
+.section-topo::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.section-topo::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  background: #001745;
+  background: -moz-linear-gradient(180deg, #001745 0%, #01326a 79%);
+  background: -webkit-linear-gradient(180deg, #001745 0%, #01326a 79%);
+  background: linear-gradient(180deg, #001745 0%, #01326a 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001745", endColorstr="#01326a", GradientType=1);
+  opacity: 0.8;
+}
+
+#container-luz-personagem {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  right: -80%;
+  bottom: -150px;
+  background: url(../img/luz-personagem.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.personagem-topo {
+  position: absolute;
+  bottom: -80px;
+  width: 450px;
+  left: 15%;
+  margin-bottom: 35px;
+}
+
+.custom-shape-divider-bottom-1626608064 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 9;
+  margin-bottom: -2px;
+}
+
+.custom-shape-divider-bottom-1626608064 svg {
+  position: relative;
+  display: block;
+  width: calc(224% + 1.3px);
+  height: 51px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1626608064 .shape-fill {
+  fill: #ffffff;
+}
+
+.section-dois-sabores {
+  background: #001745;
+  background: linear-gradient(90deg, #001745 50%, #01326a 50%);
+}
+
+.section-dois-sabores h2 {
+  font-size: 2.4em;
+}
+
+.section-dois-sabores .target-sabor {
+  font-size: 0.8em;
+}
+
+.thumb-video-depo {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #01326a;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.thumb-video-depo:hover {
+  box-shadow: 0 0 20px #01326a;
+}
+
+.thumb-video-depo .div-content-text {
+  background: rgb(255 255 255);
+  padding: 18px 8px;
+  min-height: 80px;
+  display: grid;
+  align-content: center;
+}
+
+.thumb-video-depo .div-content-text h4 {
+  font-size: 1.2em;
+  color: #001745;
+}
+
+.thumb-video-depo .div-content-text p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.thumb-video-depo .imagem-thumb {
+  position: relative;
+}
+
+.thumb-video-depo .imagem-thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0%);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+}
+
+.thumb-video-depo:hover .imagem-thumb::before {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.thumb-video-depo .imagem-thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 20%);
+  top: 0;
+  left: 0;
+}
+
+.thumb-video-depo .icon-player {
+  z-index: 9;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 34px rgb(0 0 0 / 13%);
+  border-radius: 50%; /* Mantém o ícone arredondado */
+  background-color: #c4302b; /* Cor vermelha semelhante à logo do YouTube */
+  display: flex; /* Para centralizar o conteúdo interno */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  color: #ffffff; /* Cor branca para o ícone (se for texto ou SVG interno) */
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.thumb-video-depo:hover .icon-player {
+  transform: scale(1.3);
+}
+
+.modal-video[aria-label="Depoimento"] .modal-video-body {
+  max-width: 340px !important;
+  width: 80% !important;
+}
+
+.modal-video-close-btn {
+  right: 0 !important;
+}
+
+.section-depoimentos-image img {
+  border-radius: 8px;
+}
+
+.modelo-garantia {
+  position: absolute;
+  right: 5%;
+  top: -125px;
+  width: 390px;
+}
+
+.preco .box {
+  border: 1px solid #4a96c8;
+  border-radius: 10px;
+}
+
+.preco:hover .box {
+  box-shadow: 0 0 20px #01326a;
+}
+
+.preco .header-preco {
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #001745;
+  padding: 10px 10px 10px 10px;
+}
+
+.preco.destaque .header-preco {
+  background: #001745;
+}
+
+.preco .title-header {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.preco .preco-antigo {
+  font-size: 1em;
+  color: #6a6a6a;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+
+.preco .preco-novo {
+  font-size: 1em;
+  color: #6a6a6a;
+  margin-top: -15px;
+  margin-bottom: 0;
+}
+
+.preco .destaque-valor-novo {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.preco .divisor {
+  width: 20%;
+  height: 1px;
+  display: flex;
+  background-color: #999;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.preco .divisor-preco-prazo {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  justify-content: center;
+  color: #999;
+}
+
+.preco .qt-parcelas {
+  color: #6a6a6a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.preco .valor-parcela {
+  margin-top: -5px;
+  color: #001745;
+  font-weight: 900;
+  font-size: 45px;
+  margin-bottom: 25px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 10px;
+}
+
+.preco .cta-comprar {
+  background: #06ca29 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  border-radius: 7px;
+  font-size: 20px !important;
+  font-family: "Nunito", sans-serif;
+  padding: 10px 20px;
+}
+
+.preco .desconto {
+  background: #fd0245;
+  display: inline;
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 300px;
+  font-weight: 600;
+}
+
+.preco .sifrao {
+  font-size: 0.6em;
+  margin-right: -5px;
+}
+
+.preco .content-box {
+  padding-top: 10px;
+}
+
+.preco .text-combo {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+.border-round-img {
+  border-radius: 10px;
+}
+
+#perguntas-frequentes .card-header::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background-image: url(../img/icons/caret.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0px;
+  top: 39%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+#perguntas-frequentes .card-header[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+  top: 39%;
+}
+
+#perguntas-frequentes .card {
+  border: none;
+}
+
+#perguntas-frequentes .card-header {
+  position: relative;
+  background-color: transparent;
+  padding: 1.4em;
+  border-bottom: 1px solid rgb(204 204 204);
+}
+
+#perguntas-frequentes h6 {
+  font-weight: 600;
+  margin: 0;
+  color: #666;
+}
+
+#perguntas-frequentes .card-body {
+  border-bottom: 1px solid rgb(204 204 204);
+}
+
+#perguntas-frequentes .card-body p {
+  font-size: 0.95em;
+  padding-left: 10px;
+}
+
+.bg-success {
+  background-color: #02944e !important;
+}
+
+footer {
+  background: #001745;
+  position: relative;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #001745;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul li,
+footer ul li a {
+  color: rgb(239 239 239 / 80%);
+}
+
+footer ul li a:hover {
+  color: #ffd667;
+}
+
+footer p {
+  color: rgb(239 239 239 / 80%);
+}
+
+footer hr {
+  color: rgb(255 255 255 / 31%);
+}
+
+.custom-shape-divider-bottom-1626726514 {
+  position: absolute;
+  top: -52px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626726514 svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 55px;
+}
+
+.custom-shape-divider-bottom-1626726514 .shape-fill {
+  fill: #001745;
+}
+
+/*FORMULARIO*/
+.form {
+  /* margin-top: 2rem; */
+  /*    background-color: #f4f4f4; */
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 1px 1px 20px #f4f4f4;
+}
+.formLeft {
+  display: flex;
+}
+.formHeader {
+  font-size: 24px;
+  text-align: center;
+}
+.formHeader h3:last-child {
+  color: #daa520;
+}
+.icone {
+  color: #daa520;
+  font-size: 24px;
+  margin-right: 5px;
+  line-height: 1;
+}
+
+.topicoForm {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  text-align: initial;
+}
+
+.topicoForm p {
+  display: flex;
+  align-items: flex-start;
+}
+.form-control,
+.form-select {
+  font-size: 16px;
+  font-weight: 300;
+}
+.form-select {
+  cursor: pointer;
+}
+
+.btnEnviar {
+  text-align: center;
+}
+.btnSub {
+  background-color: #008000;
+  border: none;
+  height: 50px;
+}
+
+.btnSub:hover {
+  background-color: #036803;
+}
+
+@media (max-width: 926px) {
+  .imagemform {
+    width: 200px;
+  }
+  .topicoForm {
+    margin-top: 0;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .section-dois-sabores {
+    background: #001745;
+    background: linear-gradient(180deg, #001745 50%, #01326a 50%);
+  }
+
+  .personagem-topo {
+    position: relative;
+    width: 250px;
+    left: 0;
+    right: auto;
+    bottom: 0px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #container-luz-personagem {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    right: -31%;
+    bottom: -10%;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section-topo {
+    padding-top: 95px;
+    padding-bottom: 90px;
+  }
+
+  .section-topo .cta {
+    z-index: 99;
+    margin-top: -38px;
+    position: relative;
+  }
+
+  .letter-amor-sache {
+    width: 250px;
+  }
+
+  .cta-garantia-mob {
+    z-index: 99;
+    position: relative;
+    margin-bottom: -277px;
+  }
+
+  .section-top-large {
+    padding-top: 90px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .caixa-mockup {
+    width: 250px;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+
+  .icon-beneficios img {
+    width: 80px;
+  }
+
+  .icon-beneficios h5 {
+    font-weight: 600;
+  }
+
+  .section-dois-sabores h2 {
+    font-size: 2.1em;
+  }
+
+  .thumb-video-depo .div-content-text h4 {
+    font-size: 1.08em;
+  }
+
+  .thumb-video-depo .div-content-text p {
+    font-size: 0.8em;
+  }
+
+  .modelo-garantia {
+    position: relative;
+    right: auto;
+    left: auto;
+    top: 0;
+    width: 290px;
+    margin-bottom: -300px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .coluna-modelo-garantia {
+    min-height: 350px;
+    text-align: center;
+  }
+
+  .preco .content-box {
+    display: flex;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .preco .preco-antigo,
+  .preco .preco-novo,
+  .preco .qt-parcelas {
+    font-size: 0.85em;
+  }
+
+  .preco .qt-parcelas {
+    margin-top: 5px;
+  }
+
+  .preco .destaque-valor-novo {
+    font-size: 1.3em;
+  }
+
+  .preco .divisor-preco-prazo {
+    display: none;
+  }
+
+  .preco .valor-parcela {
+    font-size: 2em;
+  }
+
+  .preco .sifrao {
+    font-size: 0.5em;
+  }
+
+  .preco .desconto {
+    font-size: 0.9em;
+  }
+
+  .preco .cta-comprar {
+    font-size: 1em !important;
+  }
+  .imagemform {
+    width: 160px;
+  }
+}
+
+/* Modal */
+/* #fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index:50;
+  }
+
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 100;
+  }
+  #fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+#modal.hide,
+#fade.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#modal.hide {
+  top: 0;
+} */
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.services__modal-content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 100;
+}
+.services__modal-close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}

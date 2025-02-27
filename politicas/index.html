@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #0056b3;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #003366;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Navegação fixa no topo */
+        .navbar {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* Centraliza a barra */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            padding: 5px 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #003366;
+            border-radius: 4px;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11522138280"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11522138280');
+</script>
+
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <a href="index.html#informacoes">Informações Coletadas</a>
+        <a href="index.html#uso">Uso das Informações</a>
+        <a href="index.html#cookies">Uso de Cookies</a>
+        <a href="index.html#direitos">Seus Direitos</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <div class="container">
+        <h1>Política de Privacidade</h1>
+        <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como coletamos, usamos e protegemos as informações fornecidas por você ao acessar este site.</p>
+        
+        <h2 id="informacoes">Informações que Coletamos</h2>
+        <p>Podemos coletar os seguintes dados:</p>
+        <ul>
+            <li>Informações pessoais, como nome, e-mail e telefone, quando fornecidas por você.</li>
+            <li>Dados de navegação, como endereço IP, localização geográfica, tipo de navegador e duração da visita.</li>
+            <li>Cookies e tecnologias de rastreamento para personalizar sua experiência no site.</li>
+        </ul>
+        
+        <h2 id="uso">Uso das Informações</h2>
+        <p>As informações coletadas são usadas para:</p>
+        <ul>
+            <li>Personalizar a experiência do usuário.</li>
+            <li>Fornecer suporte e atendimento ao cliente.</li>
+            <li>Enviar comunicações relevantes, como ofertas e atualizações.</li>
+            <li>Melhorar o desempenho e funcionalidade do site.</li>
+        </ul>
+        
+        <h2 id="cookies">Uso de Cookies</h2>
+        <p>Utilizamos cookies para melhorar sua experiência. Você pode gerenciar suas preferências de cookies nas configurações do navegador.</p>
+        
+        <h2 id="direitos">Seus Direitos</h2>
+        <p>Você tem o direito de:</p>
+        <ul>
+            <li>Acessar e corrigir suas informações pessoais.</li>
+            <li>Solicitar a exclusão de seus dados.</li>
+            <li>Retirar seu consentimento para o uso de cookies.</li>
+        </ul>
+        
+       
+        
+        <div class="footer">
+            <p>© 2024 - 2025 - Todos os direitos reservados.</p>
+        
+    <p>
+        <a href="../termos/index.html" style="color: #0056b3; text-decoration: underline;">Termos de Uso</a> | 
+        <a href="index.html" style="color: #0056b3; text-decoration: underline;">Política de Privacidade</a>
+    </p>
+        
+    </div>
+    </div>
+
+    <!-- Banner de cookies -->
+    <div class="cookie-banner" id="cookie-banner">
+        <span>Este site utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa <a href="index.html#cookies" style="color: #fff;">Política de Privacidade</a>.</span>
+        <button id="accept-cookies">Aceitar</button>
+    </div>
+
+    <script>
+        // Gerencia o banner de cookies
+        document.getElementById("accept-cookies").addEventListener("click", function() {
+            document.getElementById("cookie-banner").style.display = "none";
+            localStorage.setItem("cookiesAccepted", "true");
+        });
+
+        // Verifica se o usuário já aceitou os cookies
+        window.onload = function() {
+            if (localStorage.getItem("cookiesAccepted") === "true") {
+                document.getElementById("cookie-banner").style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

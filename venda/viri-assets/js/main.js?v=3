@@ -1,0 +1,42 @@
+
+
+
+/*Mostrar Modal depoimentos*/
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.services__button'),
+      modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick) {
+    const modalView = modalViews[modalClick];
+    modalView.classList.add('active-modal');
+
+    // Inicializa o player do Vimeo no modal
+    const iframe = modalView.querySelector('iframe');
+    if (iframe) {
+        const player = new Vimeo.Player(iframe);
+
+        // Reproduz o vídeo automaticamente ao abrir o modal
+        player.play();
+
+        // Adiciona evento para pausar o vídeo ao fechar o modal
+        modalView.querySelector('.services__modal-close').addEventListener('click', () => {
+            player.pause();
+        });
+    }
+};
+
+// Configura os botões para abrir o modal
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () => {
+        modal(i);
+    });
+});
+
+// Configura o botão para fechar o modal
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
